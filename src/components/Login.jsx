@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../css/Login.css';
+import '../css/login.css';
+import Footer from './Footer';
 
 class Login extends Component {
   constructor() {
@@ -21,8 +22,7 @@ class Login extends Component {
         alert('user is authenticated');
       }
     }
-
-  }
+  };
 
   render() {
     return (
@@ -37,9 +37,10 @@ class Login extends Component {
           <input type="password" name="password" ref={ pwd => this.password = pwd} className="input-group" id="password" placeholder="Password" />
           <button type="submit" name="submit" className="login-btn btn-primary" onClick={this.submitLogin}>Login</button>
         </form>
+        <Footer />
       </div>
     )
-  }
-}
+  };
+};
 
 export default Login;

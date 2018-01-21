@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #123560;
+    margin-top: 20px;
+}
+
+.footer .text-muted {
+    text-align: center;
+    margin: 0px;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+}
