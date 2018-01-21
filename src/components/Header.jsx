@@ -1,16 +1,13 @@
 import React from 'react';
+import '../css/header.css';
 
-const Header = (props) => {
+const Header = () => {
         return(
-            <div className="navbar navbar-default">
-                <div className="container">
-                    <div className="navbar-header">
-                       <div className="nav navbar-nav">
-                            <li><a href="#">{props.homeLink}</a></li>
-                       </div>
-                    </div>
-                </div>
+           <div className="row">
+            <div className="col-md-3 col-lg-3">
+                <figure><img src={require('../assest/images/logo.png')} className="nav-logo"/></figure>
             </div>
+           </div>
         );
 };
 
